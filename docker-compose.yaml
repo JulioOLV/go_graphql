@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    image: golang:1.21
+    volumes:
+      - ./:/usr/src/app
+    tty: true
+    container_name: gographql
+    ports:
+      - 8080:8080
